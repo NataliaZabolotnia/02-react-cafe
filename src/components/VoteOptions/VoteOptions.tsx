@@ -24,11 +24,7 @@ export default function VoteOptions({
         Bad
       </button>
       {canReset && (
-        <button
-          className={`${css.button} ${css.reset}`}
-          onClick={onReset}
-          disabled={!canReset}
-        >
+        <button className={`${css.button} ${css.reset}`} onClick={onReset}>
           Reset
         </button>
       )}
